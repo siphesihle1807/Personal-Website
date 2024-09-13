@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Siphe Coded - See My Work</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+
+  <style>
+    .navbar-brand {
+      font-size: 50px;
+    }
+
+    .dropdown-menu {
+      font-size: 25px;
+    }
+
+    .nav-item {
+      font-size: 25px;
+    }
+
+    .feature-icon {
+      width: 4rem;
+      height: 4rem;
+      border-radius: 0.75rem;
+    }
+
+    .container {
+      padding: 2rem;
+    }
+
+    .follow-me-heading {
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    .social-icons .social-icon {
+      filter: invert(1);
+      transition: filter 0.3s ease;
+    }
+
+    .social-icons .social-icon:hover {
+      filter: invert(0.7);
+    }
+
+    .social-icons a {
+      font-size: 2.5rem;
+      margin: 0 10px;
+    }
+
+    h2, h3, h4 {
+      color: white;
+    }
+
+    .small-responsive-img {
+      max-width: 80%; /* Set max width to 80% of its container */
+      height: auto; /* Maintain aspect ratio */
+      margin: 0 auto; /* Center the image */
+    }
+
+    @media (max-width: 768px) {
+      .navbar-brand {
+        font-size: 40px;
+      }
+
+      .feature-icon {
+        width: 3rem;
+        height: 3rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+<!-- Navigation bar starts here -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><img src="images/me.png" alt="moveit brand icon" height="60"> Siphe Coded.</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse navbar-right" id="navbarSupportedContent">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link" href="#">About me</a>
+        </li> -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Services
+          </a>
+          <ul class="dropdown-menu">
+<!--            <li><a class="dropdown-item" href="quote.html">Get a quote</a></li>-->
+            <li><a class="dropdown-item" href="mywork.html">See my work</a></li>
+            <li><a class="dropdown-item" href="playlist.html">My Coding Playlist</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!--Tech stack -->
+<div class="container my-5">
+  <h2 class="text-center mb-4"><strong>My Tech Stack</strong></h2>
+  <p class="text-center mb-4" >These are a few of the Software Engineering technologies I am familiar with as an 'Advanced Beginner'.</p>
+  <div class="d-flex justify-content-center">
+    <img src="images/Website.png" class="card-img-top small-responsive-img mb-4" alt="Travel Agency Website">
+
+  </div>
+</div>
+
+
+
+
+  <!-- Work Section -->
+<div class="container my-5">
+  <h2 class="text-center mb-4"><strong>Demo Projects</strong></h2>
+  <div><p class="text-center">These are a few projects I have worked on, and are available on my GitHub.
+  They are just demos, so don't worry about buttons that don't work or the Lorem Ipsum.</p>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card">
+        <img src="images/TA.png" class="card-img-top small-responsive-img" alt="Travel Agency Website">
+        <div class="card-body">
+          <h5 class="card-title">Travel Agency</h5>
+          <p class="card-text">This project is designed for a travel agency to assist users plan their perfect getaway at a reasonable price.</p>
+          <a href="https://siphesihle1807.github.io/Escape-Deluxe-Travels/" class="btn btn-primary">View Project</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <img src="images/SheHacks.png" class="card-img-top small-responsive-img" alt="Mukuru Hackathon Website">
+        <div class="card-body">
+          <h5 class="card-title">Mukuru SheHacks</h5>
+          <p class="card-text">This project was for the SheHacks Hackathon by WeThinkCode x Mukuru.</p>
+          <a href="https://siphesihle1807.github.io/mukuru-hackathon/locationfinder.html" class="btn btn-primary">View Project</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <img src="images/MTS2.png" class="card-img-top small-responsive-img" alt="My Tech Space">
+        <div class="card-body">
+          <h5 class="card-title">My Tech Space</h5>
+          <p class="card-text">This website documents my journey sharing all the resources I've used.</p>
+          <a href="https://siphesihle1807.github.io/my-tech-space/" class="btn btn-primary">View Project</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Work Section -->
+<div class="container my-5">
+  <h2 class="text-center mb-4"><strong>Upcoming Projects</strong></h2>
+  <div><p class="text-center">These are the projects that are still in the works but not fully developed. All we have is an idea, and they are to be brought to life.</p>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card">
+        <img src="images/PromoFynder.png" class="card-img-top small-responsive-img" alt="PromoFynder">
+        <div class="card-body">
+          <h5 class="card-title">PromoFynder</h5>
+          <p class="card-text">This project will help influencers get promos, and connect with like-minded users for collaboration.</p>
+          <a href="https://promofynder.my.canva.site/" class="btn btn-primary">View Project</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <img src="images/OM.png" class="card-img-top small-responsive-img" alt="Project 2">
+        <div class="card-body">
+          <h5 class="card-title">OomfMart</h5>
+          <p class="card-text">This project will be a 'library' of entrepreneurs where sellers and buyers meet.</p>
+          <a href="https://promofynder.my.canva.site/ooomfmart" class="btn btn-primary">View Project</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <img src="images/Untitled9.png" class="card-img-top small-responsive-img" alt="Project 3">
+        <div class="card-body">
+          <h5 class="card-title">More On Github</h5>
+          <p class="card-text">More projects will be added to my GitHub, not just web design related but everything tech.</p>
+          <a href="https://github.com/siphesihle1807" class="btn btn-primary">View GitHub</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--Contact Section-->
+<!--<div class="full-width-section ">-->
+<!--  <div class="container text-center py-5">-->
+<!--    <h2>Get in touch!</h2>-->
+<!--    <p>If you have any questions, would like some recipes to the food-->
+<!--      displayed or would like to collaborate, feel free to reach out.</p>-->
+<!--    <form action="https://formspree.io/f/mrbzdkg0b" method="POST">-->
+<!--      <div class="mb-3">-->
+<!--        <label for="name" class="form-label">Name</label>-->
+<!--        <input type="text" class="form-control" id="name" name="name" required>-->
+<!--      </div>-->
+<!--      <div class="mb-3">-->
+<!--        <label for="email" class="form-label">Email</label>-->
+<!--        <input type="email" class="form-control" id="email" name="email" required>-->
+<!--      </div>-->
+<!--      <div class="mb-3">-->
+<!--        <label for="message" class="form-label">Message</label>-->
+<!--        <textarea class="form-control" id="message" name="message" rows="3" required></textarea>-->
+<!--      </div>-->
+<!--      <button type="submit" class="btn btn-primary">Send</button>-->
+<!--    </form>-->
+
+<!--    <p class="mt-4">Or email me directly at <a href="mailto:siphecoded@gmail.com">siphecoded@gmail.com</a></p>-->
+
+<!--    &lt;!&ndash; Social Media Links &ndash;&gt;-->
+<!--    <div class="mt-4">-->
+<!--      <h3 class="follow-me-heading">Follow Me:</h3>-->
+<!--      <div class="social-icons d-flex justify-content-center">-->
+<!--        <a href="https://twitter.com/siphecoded" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>-->
+<!--        <a href="https://www.linkedin.com/in/siphecoded" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>-->
+<!--        <a href="https://github.com/siphesihle1807" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</div>-->
+
+<!-- Footer Section -->
+      <div class="container">
+
+<!--        <footer class="mt-auto py-3 bg-dark text-white">-->
+<!--          <div class="container">-->
+<!--            <div class="row">-->
+<!--              <div class="col mb-3">-->
+<!--                <a href="/" class="d-flex align-items-left mb-3 link-body-emphasis text-decoration-none">-->
+<!--                  <svg class="bi me-2" width="40" height="32">-->
+<!--                    <use xlink:href="#bootstrap"></use>-->
+<!--                  </svg>-->
+<!--                </a>-->
+<!--                <p class="text-body-secondary">© Siphe Coded - <span id="currentYear"></span></p>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </footer>-->
+
+        <script>
+          // This script gets the current year and updates the footer
+          document.getElementById("currentYear").textContent = new Date().getFullYear();
+        </script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+                crossorigin="anonymous">
+        </script>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+
+</html>

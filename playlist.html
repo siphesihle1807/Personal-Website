@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Siphe Coded</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+
+  <style>
+    .navbar-brand {
+      font-size: 50px;
+    }
+
+    .dropdown-menu {
+      font-size: 25px;
+    }
+
+    .nav-item {
+      font-size: 25px;
+    }
+
+    .feature-icon {
+      width: 4rem;
+      height: 4rem;
+      border-radius: 0.75rem;
+    }
+
+    .container {
+      padding: 2rem;
+    }
+
+    .follow-me-heading {
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    .social-icons .social-icon {
+      filter: invert(1);
+      transition: filter 0.3s ease;
+    }
+
+    .social-icons .social-icon:hover {
+      filter: invert(0.7);
+    }
+
+    .social-icons a {
+      font-size: 2.5rem;
+      margin: 0 10px;
+    }
+
+    h2, h3, h4 {
+      color: white;
+    }
+
+    .full-width-image {
+      width: 100%;
+      height: auto;
+    }
+
+    @media (max-width: 768px) {
+      .navbar-brand {
+        font-size: 40px;
+      }
+
+      .feature-icon {
+        width: 3rem;
+        height: 3rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+<!-- Navigation bar starts here -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><img src="images/me.png" alt="moveit brand icon" height="60"> Siphe Coded.</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse navbar-right" id="navbarSupportedContent">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link" href="#">About me</a>
+        </li> -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Services
+          </a>
+          <ul class="dropdown-menu">
+<!--            <li><a class="dropdown-item" href="quote.html">Get a quote</a></li>-->
+            <li><a class="dropdown-item" href="mywork.html">See my work</a></li>
+            <li><a class="dropdown-item" href="playlist.html">My Coding Playlist</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="px-4 pt-5 my-5 text-center">
+  <div class="col-lg-6 mx-auto">
+    <h1 class="display-4 fw-bold text-body-emphasis">Coding to Tunes</h1>
+
+    <img src="https://media.dev.to/cdn-cgi/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fi%2Fd5sdc8q1qlcsbeotkrke.gif"
+         class="full-width-image" alt="Cover image for Do you listen to music while coding?">
+
+    <p class="lead mb-4">When I’m deep into coding, music is my secret weapon! It gives me that creative boost, and turns long coding sessions into something I really enjoy.
+      I’ve found myself completely losing track of time, just vibing with the code. If you're looking for a little soundtrack to your work, here are some of my favorites:
+    </p>
+
+    <!-- Social Media Links -->
+    <div class="container text-center py-4">
+      <h4 class="follow-me-heading">My Playlists:</h4>
+      <div class="social-icons">
+        <a href="https://music.apple.com/za/playlist/coding-playlist/pl.u-MDAWvpJTArPDNvo" target="_blank"><img src="images/apple.svg" alt="Apple Music" height="30"></a>
+        <a href="https://music.youtube.com/playlist?list=PLxwL75a383OvVnWvhYkBaqkGc7hzhWG44&si=P82cgaop3b4--zDD" target="_blank"><img src="images/youtube.svg" alt="YouTube Music" height="30"></a>
+        <a href="https://open.spotify.com/playlist/0dyAzdrY0lbNVBF5VyL3cr?si=p0H5fbLwS3-o9sGpXboTLQ&pi=e-uhMiliUPRkiB" target="_blank"><img src="images/spotify.svg" alt="Spotify" height="30"></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Section for users to recommend songs and leave ratings -->
+<div class="container py-5">
+  <h4 class="follow-me-heading">Recommend a Song and Leave a Rating</h4>
+  <!-- Form for song recommendation -->
+  <form id="songForm" class="text-start">
+    <div class="mb-3">
+      <label for="yourName" class="form-label">Your Name</label>
+      <input type="text" class="form-control" id="yourName" placeholder="Enter your name" required>
+    </div>
+    <div class="mb-3">
+      <label for="songName" class="form-label">Song Name</label>
+      <input type="text" class="form-control" id="songName" placeholder="Enter song name" required>
+    </div>
+    <div class="mb-3">
+      <label for="artistName" class="form-label">Artist Name</label>
+      <input type="text" class="form-control" id="artistName" placeholder="Enter artist name" required>
+    </div>
+    <div class="mb-3">
+      <label for="rating" class="form-label">Rating (1 to 5 stars)</label>
+      <select class="form-select" id="rating" required>
+        <option value="">Choose...</option>
+        <option value="1">★☆☆☆☆</option>
+        <option value="2">★★☆☆☆</option>
+        <option value="3">★★★☆☆</option>
+        <option value="4">★★★★☆</option>
+        <option value="5">★★★★★</option>
+      </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+
+  <!-- Display recommended songs -->
+  <div class="mt-4">
+    <h5>Recommended Songs:</h5>
+    <ul id="songList" class="list-group">
+      <!-- User recommendations will appear here -->
+    </ul>
+  </div>
+</div>
+
+<script>
+  // Load stored recommendations when the page loads
+  document.addEventListener('DOMContentLoaded', function () {
+    loadStoredSongs();
+  });
+
+  // Handle form submission
+  document.getElementById('songForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    const yourName = document.getElementById('yourName').value;
+    const songName = document.getElementById('songName').value;
+    const artistName = document.getElementById('artistName').value;
+    const rating = document.getElementById('rating').value;
+
+    const song = { yourName, songName, artistName, rating };
+
+    addSongToList(song);
+
+    // Store the recommendation in localStorage
+    storeSong(song);
+
+    // Clear form fields
+    document.getElementById('songForm').reset();
+  });
+
+  // Function to add song to the list
+  function addSongToList(song) {
+    const { yourName, songName, artistName, rating } = song;
+    const listItem = document.createElement('li');
+    listItem.className = 'list-group-item d-flex justify-content-between align-items-center';
+
+    const songText = document.createElement('span');
+    songText.textContent = `${songName} by ${artistName} - Recommended by ${yourName} - Rating: ${'★'.repeat(rating)}${'☆'.repeat(5 - rating)}`;
+
+    const buttonsDiv = document.createElement('div');
+    buttonsDiv.className = 'btn-group';
+    buttonsDiv.innerHTML = `
+      <button type="button" class="btn btn-outline-secondary btn-sm edit-btn">Edit</button>
+      <button type="button" class="btn btn-outline-danger btn-sm delete-btn">Delete</button>
+    `;
+
+    listItem.appendChild(songText);
+    listItem.appendChild(buttonsDiv);
+    document.getElementById('songList').appendChild(listItem);
+
+    // Edit button functionality
+    listItem.querySelector('.edit-btn').addEventListener('click', function () {
+      editSong(listItem, song);
+    });
+
+    // Delete button functionality
+    listItem.querySelector('.delete-btn').addEventListener('click', function () {
+      if (confirm('Are you sure you want to delete this recommendation?')) {
+        listItem.remove();
+        removeSongFromStorage(songName, artistName);
+      }
+    });
+  }
+
+  // Function to store song in localStorage
+  function storeSong(song) {
+    let songs = JSON.parse(localStorage.getItem('songs')) || [];
+    songs.push(song);
+    localStorage.setItem('songs', JSON.stringify(songs));
+  }
+
+  // Function to load stored songs from localStorage
+  function loadStoredSongs() {
+    let songs = JSON.parse(localStorage.getItem('songs')) || [];
+    songs.forEach(addSongToList);
+  }
+
+  // Function to remove a song from localStorage
+  function removeSongFromStorage(songName, artistName) {
+    let songs = JSON.parse(localStorage.getItem('songs')) || [];
+    songs = songs.filter(song => song.songName !== songName || song.artistName !== artistName);
+    localStorage.setItem('songs', JSON.stringify(songs));
+  }
+
+  // Function to edit a song
+  function editSong(listItem, oldSong) {
+    const yourName = prompt('Enter your name:', oldSong.yourName);
+    const songName = prompt('Enter new song name:', oldSong.songName);
+    const artistName = prompt('Enter new artist name:', oldSong.artistName);
+    const rating = prompt('Enter new rating (1 to 5 stars):', oldSong.rating);
+
+    if (yourName && songName && artistName && rating) {
+      listItem.querySelector('span').textContent = `${songName} by ${artistName} - Recommended by ${yourName} - Rating: ${'★'.repeat(rating)}${'☆'.repeat(5 - rating)}`;
+
+      const updatedSong = { yourName, songName, artistName, rating };
+      removeSongFromStorage(oldSong.songName, oldSong.artistName);
+      storeSong(updatedSong);
+    }
+  }
+
+</script>
+
+<!-- Footer Section -->
+<div class="container">
+
+  <footer class="mt-auto py-3 bg-dark text-white">
+    <div class="container">
+      <div class="row">
+        <div class="col mb-3">
+          <a href="/" class="d-flex align-items-left mb-3 link-body-emphasis text-decoration-none">
+            <svg class="bi me-2" width="40" height="32">
+              <use xlink:href="#bootstrap"></use>
+            </svg>
+          </a>
+          <p class="text-body-secondary">© Siphe Coded - <span id="currentYear"></span></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // This script gets the current year and updates the footer
+    document.getElementById("currentYear").textContent = new Date().getFullYear();
+  </script>
+
+<!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-w8f6dCEhAJwGYT1z1kF1zqJtG2Rg5dFg5Pz9fFS9+0jEO5w4abXVr6K9Ruwj1Wz8" crossorigin="anonymous">
+
+  </script>
+</body>
+</html>
+
